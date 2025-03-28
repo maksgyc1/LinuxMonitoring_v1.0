@@ -1,13 +1,10 @@
 #!/bin/bash
 
-# Функция вывода данных
 print_info() {
     echo -e "${BG_TITLE}${FG_TITLE}$1${RESET} = ${BG_VALUE}${FG_VALUE}$2${RESET}"
 }
 
-# Функция вывода всей информации
 print_all_info() {
-    # Проверяем, переданы ли параметры, и вызываем print_info для каждого
     print_info "HOSTNAME" "$HOSTNAME"
     print_info "TIMEZONE" "$TIMEZONE"
     print_info "USER" "$USER"

@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# Функция сохранения данных в файл
 save_to_file() {
     read -p "Записать данные в файл? (Y/N): " choice
     if [[ "$choice" == "Y" || "$choice" == "y" ]]; then

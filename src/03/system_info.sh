@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# Функция получения системной информации
 get_system_info() {
     HOSTNAME=$(hostname)
     TIMEZONE=$(timedatectl | grep 'Time zone' | awk '{print $3, $4, $5}')

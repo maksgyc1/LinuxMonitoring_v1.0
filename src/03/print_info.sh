@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# Цвета (1 — white, 2 — red, 3 — green, 4 — blue, 5 — purple, 6 — black)
 COLORS=("" "\e[47m" "\e[41m" "\e[42m" "\e[44m" "\e[45m" "\e[40m")
 TEXT_COLORS=("" "\e[37m" "\e[31m" "\e[32m" "\e[34m" "\e[35m" "\e[30m")
 
@@ -10,12 +9,10 @@ BG_VALUE=${COLORS[$3]}
 FG_VALUE=${TEXT_COLORS[$4]}
 RESET="\e[0m"
 
-# Функция вывода данных
 print_info() {
     echo -e "${BG_TITLE}${FG_TITLE}$1${RESET} = ${BG_VALUE}${FG_VALUE}$2${RESET}"
 }
 
-# Функция вывода всей информации
 print_all_info() {
     print_info "HOSTNAME" "$HOSTNAME"
     print_info "TIMEZONE" "$TIMEZONE"

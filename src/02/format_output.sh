@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# Функция форматированного вывода данных
 format_output() {
     echo "HOSTNAME = $HOSTNAME"
     echo "TIMEZONE = $TIMEZONE"
